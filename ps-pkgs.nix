@@ -35,7 +35,17 @@
           { repo = "https://github.com/Thimoteus/purescript-promises.git";
             rev = "76aac1f6583c39a3745f862636d16c7292d29690";
           };
-        info = { version = "3.0.0"; };
+        info =
+          { version = "3.1.1";
+            dependencies =
+              [ prelude
+                functions
+                exceptions
+                transformers
+                datetime
+                console
+              ];
+          };
       };
 
   }
